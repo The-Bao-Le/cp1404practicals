@@ -17,6 +17,7 @@ def main():
     print(random_grade)
 
 def determine_grade(score):
+    """Determine grade based on score"""
     if score >= 90:
         grade = "Excellent"
     elif score >= 50:
