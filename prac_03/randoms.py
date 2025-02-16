@@ -15,3 +15,5 @@
 # What was the smallest number you could have seen, what was the largest?
 # The smallest number was 2.5 and the largest was 5.5
 
+import random
+print(random.randint(1, 100))
