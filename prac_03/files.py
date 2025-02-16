@@ -9,3 +9,10 @@ in_file = open(FILENAME, 'r')
 text = in_file.read()
 in_file.close()
 print(text)
+
+with open("numbers.txt", 'r') as in_file:
+    first_number = int(in_file.readline())
+    second_number = int(in_file.readline())
+    result = first_number + second_number
+    print(result)
+
