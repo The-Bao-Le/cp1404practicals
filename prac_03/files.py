@@ -16,3 +16,8 @@ with open("numbers.txt", 'r') as in_file:
     result = first_number + second_number
     print(result)
 
+with open("numbers.txt", 'r') as in_file:
+    total = 0
+    for line in in_file:
+        total += int(line)
+    print(total)
