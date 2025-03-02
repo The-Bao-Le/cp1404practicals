@@ -17,3 +17,16 @@ def load_records(filename):
             parts = line.strip().split(",")
             records.append(parts)
     return records
+
+
+def process_records(records):
+    """Process data to count champions and their countries."""
+    champion_to_count = {}
+    countries = set()
+    for record in records:
+        countries.add(record[1])
+        try:
+            champion_to_count[record[2]] += 1
+        except KeyError:
+            champion_to_count[record[2]] = 1
+    return champion_to_count, countries
