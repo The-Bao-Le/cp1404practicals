@@ -30,3 +30,15 @@ def process_records(records):
         except KeyError:
             champion_to_count[record[2]] = 1
     return champion_to_count, countries
+
+
+def display_results(champion_to_count, countries):
+    """Display the results."""
+    print("Wimbledon Champions:")
+    for champion, count in champion_to_count.items():
+        print(champion, count)
+    print(f"\nThese {len(countries)} countries have won Wimbledon: ")
+    print(", ".join(sorted(countries)))
+
+
+main()
