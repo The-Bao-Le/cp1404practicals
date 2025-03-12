@@ -11,6 +11,8 @@ def main():
     """Demo test code to show how to use car class."""
     my_car = Car(180)
     my_car.drive(30)
+    limo = Car(100)
+    print(f"Limo has fuel: {limo.fuel}")
     print(f"Car has fuel: {my_car.fuel}")
     print(my_car)
 
