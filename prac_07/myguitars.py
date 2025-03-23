@@ -5,6 +5,7 @@ def main():
     """Main program to manage guitars."""
     FILENAME = "guitars.csv"
     guitars = load_guitars(FILENAME)
+    guitars.sort()
     display_guitars(guitars)
 
 
