@@ -1,3 +1,6 @@
+CURRENT_YEAR = 2025
+VINTAGE_THRESHOLD = 50
+
 class Guitar:
     """Represent a guitar entity."""
 
@@ -12,9 +15,9 @@ class Guitar:
 
     def get_age(self):
         """Return the age of the guitar entity."""
-        return 2025 - self.year
+        return CURRENT_YEAR - self.year
 
     def is_vintage(self):
         """Return True if the guitar entity is vintage."""
-        return self.get_age() >= 50
+        return self.get_age() >= VINTAGE_THRESHOLD
 
